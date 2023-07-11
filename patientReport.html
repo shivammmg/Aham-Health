@@ -4,97 +4,95 @@
   <title>Patient Report</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.5;
-    }
-
     .container {
       max-width: 600px;
       margin: 0 auto;
       padding: 20px;
     }
 
-    .table {
-      border-collapse: collapse;
+    .text-center {
+      text-align: center;
+      display: block;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto;
+      max-width: 150px;
+      align-self: auto;
+    }
+
+    table {
       width: 100%;
+      border-collapse: collapse;
       margin-bottom: 20px;
     }
 
-    .table th,
-    .table td {
-      padding: 10px;
-      border: 1px solid #dee2e6;
+    table td, table th {
+      border: 1px solid #ddd;
+      padding: 8px;
     }
 
-    .table thead th {
-      background-color: #f8f9fa;
-      color: #333;
-      font-weight: bold;
+    table th {
+      background-color: #f2f2f2;
+    }
+
+    .footer {
+      font-size: 12px;
+      color: #777;
       text-align: center;
-    }
-
-    .table tbody tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-
-    .table tbody td {
-      vertical-align: middle;
-    }
-
-    .contact-info {
       margin-top: 30px;
     }
-
-    .contact-info p {
-      margin-bottom: 5px;
-    }
-
-    
   </style>
 </head>
 <body>
-  <div class="container">
-    <table class="table">
-      <thead class="thead-light">
-        <tr>
-          <th colspan="2" class="text-center">Patient Report</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>Name</th>
-          <td>John Doe</td>
-        </tr>
-        <tr>
-          <th>Age</th>
-          <td>35</td>
-        </tr>
-        <tr>
-          <th>Gender</th>
-          <td>Male</td>
-        </tr>
-        <tr>
-          <th>Diagnosis</th>
-          <td>Hypertension</td>
-        </tr>
-        <tr>
-          <th>Treatment</th>
-          <td>Prescription medication</td>
-        </tr>
-        <tr>
-          <th>Follow-up</th>
-          <td>Next appointment on June 10th, 2023</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="contact-info">
-      <p>If you have any questions or concerns, please contact:</p>
-      <p>Email: info@example.com</p>
-      <p>Phone: +1 123456789</p>
-    </div>
-
-    
+  <table class="container">
+    <tr>
+      <td>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/005/522/278/small/handshake-or-hands-clenched-logo-design-vector.jpg" alt="Company Logo" class="logo">
+        <h2 class="text-center">Aham Health</h2>
+        <hr>
+        <p>Dear Patient,</p>
+        <p>We are pleased to provide you with your medical report. Here's a summary of the findings:</p>
+        <table>
+          <tr>
+            <th>Report Date</th>
+            <td>May 28, 2023</td>
+          </tr>
+          <tr>
+            <th>Patient Name</th>
+            <td>John Doe</td>
+          </tr>
+          <tr>
+            <th>Age</th>
+            <td>42</td>
+          </tr>
+          <tr>
+            <th>Gender</th>
+            <td>Male</td>
+          </tr>
+          <tr>
+            <th>Diagnosis</th>
+            <td>High Blood Pressure</td>
+          </tr>
+          <tr>
+            <th>Medications</th>
+            <td>Prescribed medications</td>
+          </tr>
+          <tr>
+            <th>Recommendations</th>
+            <td>Follow a healthy lifestyle, exercise regularly</td>
+          </tr>
+        </table>
+        <hr>
+        <p>If you have any questions or need further clarification, please do not hesitate to contact us at <a href="mailto:info@example.com">info@example.com</a>.</p>
+        <p>Thank you for choosing our healthcare services. We wish you good health and a speedy recovery!</p>
+        <div class="footer">
+          <p>This email is confidential and intended solely for the use of the individual to whom it is addressed. If you have received this email in error, please notify the sender immediately and delete this email from your system. Any unauthorized dissemination, distribution, or copying of this email is strictly prohibited.</p>
+          <p>© 2023 Your Company. All rights reserved.</p>
+        </div>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
